@@ -1,2 +1,1 @@
-# webutvikling2026
-Repository for kurset Webutvikling Høsten 2026
+# Webutvikling2026
