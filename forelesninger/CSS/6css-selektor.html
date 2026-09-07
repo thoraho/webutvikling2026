@@ -4,18 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>Basic CSS</title>
+		<title>CSS-selektor</title>
 	</head>
 	<body>
 		<article>
+			<!-- Den første artikkelen velges med pseudoklassen first-child i CSS (article:first-child{}) -->
 			<h2>Produktnavn 1</h2>
 			<p>Kort beskrivelse</p>
 		</article>
 		<article id="midt-artikkel">
+			<!-- Denne artikkelen velger vi med ID-selektor i CSS (#midt-artikkel{})-->
 			<h2>Produktnavn 2</h2>
 			<p class="bigger-font">Kort beskrivelse</p>
 		</article>
 		<article class="siste-artikkel">
+			<!-- Denne artikkelen velges med klasse-selektor i CSS (.siste-artikkel{})-->
 			<h2>Produktnavn 3</h2>
 			<p>Kort beskrivelse</p>
 		</article>
@@ -25,6 +28,7 @@
 			<input type="text" id="username" />
 			<label for="password">Passord: </label>
 			<input type="password" id="password" />
+			<!-- Dette input-feltet velges med attributt-selektoren i CSS (input[type="password"]{}) -->
 			<input type="submit" value="Logg inn" />
 		</form>
 	</body>
