@@ -46,7 +46,7 @@ header {
 }
 
 #global-navigation ul {
-	display: flex;
+	display: none;
 	list-style: none;
 	justify-content: space-around;
 }
@@ -127,5 +127,14 @@ footer {
 @media (min-width: 600px) {
 	#grid-container {
 		grid-template-areas: "header header header" "nav nav nav" "main main aside" "footer footer footer";
+	}
+
+	#global-navigation ul {
+		display: flex;
+	}
+
+	#ham,
+	#close-ham {
+		display: none;
 	}
 }
