@@ -1,37 +1,49 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Produktside - Pink runners</title>
-	</head>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styles.css"/>
+	<title>Produktside - Pink runners</title>
+	
+</head>
+<div id="grid-container">
+
 	<body>
 		<header>
 			<form>
 				<input type="search" />
 				<button type="submit">Search</button>
 			</form>
-			<img src="img/logo.png" alt="logo for BTS" />
-			<nav>
-				<ul>
-					<li><a href="#">Home</a></li>
-				</ul>
-			</nav>
+			<img id="logo" src="img/logo.png" alt="logo for BTS" />
 			<section>
 				<a href="#">Sign in</a>
 				<a href="#">Shopping cart</a>
 			</section>
 		</header>
+		<nav id="global-navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Men</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Childern</a></li>
+					<li><a href="#">Special Offers</a></li>
+				</ul>
+			</nav>
 		<main>
 			<!-- Breadcrumbs -->
 			<nav id="breadcrumbs">
 				<ul>
-					<li><a href="#">Brødsmulesti</a></li>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Running Shoes</a></li>
+					<li><a href="#">Pink Runners</a></li>
+
 				</ul>
 			</nav>
 			<!-- Bilde, overskrift, beskrivelse, pris og knapp for å legge til i handlekurv  -->
-			<figure>
-				<img src="img/pink-shoes.jpeg" alt="Pink runners" />
+			<figure class="left-content-container">
+				<img class="acktive-img" src="img/pink-shoes.jpeg" alt="Pink runners" />
 				<img src="img/pink-shoes.jpeg" alt="Pink runners" />
 				<img src="img/pink-shoes.jpeg" alt="Pink runners" />
 				<img src="img/pink-shoes.jpeg" alt="Pink runners" />
@@ -64,4 +76,6 @@
 		</main>
 		<footer>&copy; BUY THESE SHOES 2026</footer>
 	</body>
+</div>
+
 </html>
