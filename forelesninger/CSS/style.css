@@ -1,0 +1,27 @@
+*{
+    font-family: sans-serif;
+}
+
+p{
+    
+    font-size: 16px;
+    
+}
+
+article::first-child {
+    background-color: beige;
+}
+
+#midt-artikkel {
+    background-color: aliceblue;
+}
+
+.siste-artikkel {
+    background-color: bisque;
+}
+input[type=" passwoed"] {
+    border: 2px red;
+    border-re;
+}
+ 
+

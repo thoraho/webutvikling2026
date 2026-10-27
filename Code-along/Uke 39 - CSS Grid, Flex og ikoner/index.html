@@ -1,89 +1,81 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="icons/css/all.min.css" />
-		<link rel="stylesheet" href="css/styles.css" />
-		<title>Produktside - Pink runners</title>
-	</head>
-	<body>
-		<div id="grid-container">
-			<header>
-				<form>
-					<input type="search" />
-					<button type="submit">Search</button>
-				</form>
-				<img id="logo" src="img/logo.png" alt="logo for BTS" />
 
-				<section>
-					<a href="#"
-						>Sign in
-						<i class="fa-solid fa-user"></i>
-					</a>
-					<a href="#">Shopping cart</a>
-				</section>
-			</header>
-			<nav id="global-navigation">
-				<button id="ham"><i class="fa-solid fa-bars"></i></button>
-				<ul id="menu">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/styles.css"/>
+	<title>Produktside - Pink runners</title>
+	
+</head>
+<div id="grid-container">
+
+	<body>
+		<header>
+			<form>
+				<input type="search" />
+				<button type="submit">Search</button>
+			</form>
+			<img id="logo" src="img/logo.png" alt="logo for BTS" />
+			<section>
+				<a href="#">Sign in</a>
+				<a href="#">Shopping cart</a>
+			</section>
+		</header>
+		<nav id="global-navigation">
+				<ul>
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Men</a></li>
 					<li><a href="#">Women</a></li>
-					<li><a href="#">Children</a></li>
+					<li><a href="#">Childern</a></li>
 					<li><a href="#">Special Offers</a></li>
-					<li>
-						<button id="close-ham"><i class="fa-solid fa-xmark"></i></button>
-					</li>
 				</ul>
 			</nav>
-			<main>
-				<!-- Breadcrumbs -->
-				<nav id="breadcrumbs">
-					<ul>
-						<li><a href="#">Women</a></li>
-						<li><a href="#">Running Shoes</a></li>
-						<li><a href="#">Pink Runners</a></li>
-					</ul>
-				</nav>
-				<!-- Bilde, overskrift, beskrivelse, pris og knapp for å legge til i handlekurv  -->
-				<picture class="left-content-container flex-items">
-					<source media="(min-width: 600px)" srcset="img/pink-shoes-medium.jpeg" />
-					<source media="(min-width: 1200px)" srcset="img/pink-shoes-large.jpeg" />
+		<main>
+			<!-- Breadcrumbs -->
+			<nav id="breadcrumbs">
+				<ul>
+					<li><a href="#">Women</a></li>
+					<li><a href="#">Running Shoes</a></li>
+					<li><a href="#">Pink Runners</a></li>
 
-					<img class="active-img" src="img/pink-shoes-small.jpeg" alt="Pink runners" />
-					<img src="img/pink-shoes.jpeg" alt="Pink runners" />
-					<img src="img/pink-shoes.jpeg" alt="Pink runners" />
-					<img src="img/pink-shoes.jpeg" alt="Pink runners" />
-				</picture>
+				</ul>
+			</nav>
+			<!-- Bilde, overskrift, beskrivelse, pris og knapp for å legge til i handlekurv  -->
+			<figure class="left-content-container">
+				<img class="acktive-img" src="img/pink-shoes.jpeg" alt="Pink runners" />
+				<img src="img/pink-shoes.jpeg" alt="Pink runners" />
+				<img src="img/pink-shoes.jpeg" alt="Pink runners" />
+				<img src="img/pink-shoes.jpeg" alt="Pink runners" />
+			</figure>
 
-				<section class="right-content-container flex-items">
-					<span> SHUS </span>
-					<h1>Pink runners</h1>
-					<span>1499 kr</span>
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo mollitia alias
-						labore quam eius impedit inventore sapiente, iure dolore rerum perspiciatis ad maxime
-						architecto repellat consequuntur adipisci unde sequi.
-					</p>
-					<form>
-						<label for="size">Size:</label>
-						<select name="size" id="size">
-							<option value="36">36</option>
-							<option value="37">37</option>
-							<option value="38">38</option>
-							<option value="39">39</option>
-							<option value="40">40</option>
-						</select>
-						<button>Add to cart</button>
-					</form>
-				</section>
-			</main>
+			<section>
+				<span> SHUS </span>
+				<h3>Pink runners</h3>
+				<span>1499 kr</span>
+				<p>
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quo mollitia alias labore
+					quam eius impedit inventore sapiente, iure dolore rerum perspiciatis ad maxime architecto
+					repellat consequuntur adipisci unde sequi.
+				</p>
+				<form>
+					<label for="size">Size:</label>
+					<select name="size" id="size">
+						<option value="36">36</option>
+						<option value="37">37</option>
+						<option value="38">38</option>
+						<option value="39">39</option>
+						<option value="40">40</option>
+					</select>
+					<button>Add to cart</button>
+				</form>
+			</section>
 			<aside>
 				<h3>More products like this</h3>
 			</aside>
-			<footer>&copy; BUY THESE SHOES 2026</footer>
-		</div>
-		<script src="js/script.js"></script>
+		</main>
+		<footer>&copy; BUY THESE SHOES 2026</footer>
 	</body>
+</div>
+
 </html>
