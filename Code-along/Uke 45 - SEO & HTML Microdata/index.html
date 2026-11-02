@@ -30,8 +30,8 @@
 		</header>
 
 		<main id="main" tabindex="-1">
-			<section class="wrap">
-				<h1>Twin Peaks</h1>
+			<section class="wrap" itemscope itemtype="https://schema.org/MusicGroup">
+				<h1 itemprop="name">Twin Peaks</h1>
 				<p class="lead">
 					Fem venner fra Chicago som spiller skranglete, glad og høy rock – fra garasjen til de
 					største festivalene.
@@ -39,7 +39,7 @@
 
 				<section aria-labelledby="om-bandet">
 					<h2 id="om-bandet">Om bandet</h2>
-					<p>
+					<p itemprop="description">
 						Twin Peaks er et indierockband fra Chicago. Bandet startet i 2009, og de spilte sine
 						første konserter i kjellere og på DIY-scener i byen. Navnet er hentet fra TV-serien,
 						selv om ingen av dem hadde sett den da de tok navnet.
@@ -52,33 +52,43 @@
 
 					<dl>
 						<dt>Sjanger</dt>
-						<dd>Indierock</dd>
+						<dd itemprop="genre">Indierock</dd>
 						<dt>Fra</dt>
-						<dd>Chicago, Illinois</dd>
+						<dd itemprop="foundingLocation">Chicago, Illinois</dd>
 						<dt>Aktive siden</dt>
 						<dd><time datetime="2009">2009</time></dd>
 						<dt>Plateselskap</dt>
-						<dd>Autumn Tone Records, senere Grand Jury Music</dd>
+						<dd itemprop="memberOf">Autumn Tone Records, senere Grand Jury Music</dd>
 					</dl>
 				</section>
 
 				<section aria-labelledby="medlemmer">
 					<h2 id="medlemmer">Medlemmer</h2>
 					<ul>
-						<li>
-							<a href="medlemmer.html#cadien-lake-james">Cadien Lake James</a>
+						<li itemprop="member" itemscope itemtype="https://schema.org/Person">
+							<a itemprop="url" href="medlemmer.html#cadien-lake-james"
+								><span itemprop="name">Cadien Lake James</span></a
+							>
 						</li>
-						<li>
-							<a href="medlemmer.html#clay-frankel">Clay Frankel</a>
+						<li itemprop="member" itemscope itemtype="https://schema.org/Person">
+							<a itemprop="url" href="medlemmer.html#clay-frankel"
+								><span itemprop="name">Clay Frankel</span></a
+							>
 						</li>
-						<li>
-							<a href="medlemmer.html#jack-dolan">Jack Dolan</a>
+						<li itemprop="member" itemscope itemtype="https://schema.org/Person">
+							<a itemprop="url" href="medlemmer.html#jack-dolan"
+								><span itemprop="name">Jack Dolan</span></a
+							>
 						</li>
-						<li>
-							<a href="medlemmer.html#connor-brodner">Connor Brodner</a>
+						<li itemprop="member" itemscope itemtype="https://schema.org/Person">
+							<a itemprop="url" href="medlemmer.html#connor-brodner"
+								><span itemprop="name">Connor Brodner</span></a
+							>
 						</li>
-						<li>
-							<a href="medlemmer.html#colin-croom">Colin Croom</a>
+						<li itemprop="member" itemscope itemtype="https://schema.org/Person">
+							<a itemprop="url" href="medlemmer.html#colin-croom"
+								><span itemprop="name">Colin Croom</span></a
+							>
 						</li>
 					</ul>
 				</section>
@@ -102,13 +112,16 @@
 							</article>
 						</li>
 						<li>
-							<article class="card">
+							<article class="card" itemscope itemtype="https://schema.org/Event">
 								<h3><a href="konserter.html">Neste konsert</a></h3>
-								<p>
+								<p itemprop="name">
 									Twin Peaks på Rockefeller,
-									<time datetime="2027-04-02T21:00+02:00">2. april 2027</time>.
+									<time datetime="2027-04-02T21:00+02:00" itemprop="startDate">2. april 2027</time>.
 								</p>
-								<p>Rockefeller Music Hall, Torggata 16, Oslo</p>
+								<p itemprop="location" itemscope itemtype="https://schema.org/Place">
+									<span itemprop="name">Rockefeller Music Hall</span>,
+									<span itemprop="address">Torggata 16, 0181 Oslo</span>
+								</p>
 							</article>
 						</li>
 					</ul>
