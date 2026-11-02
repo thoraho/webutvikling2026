@@ -1,0 +1,272 @@
+/*
+  TWIN PEAKS (BANDET) – EKSEMPEL PÅ SEO OG STRUKTURERTE DATA
+  Stilarket er likt i versjonen med og uten microdata. Microdata endrer ingenting visuelt.
+*/
+
+:root {
+	--bg: #fbf6ec;
+	--text: #1b1b1b;
+	--accent: #b3401b;
+	--dark: #1b1b1b;
+	--muted: #55504a;
+	--focus: #0b4f8a;
+	--header-font: "Helvetica Neue Black", Impact, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	color: var(--text);
+	background: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--header-font);
+	line-height: 1.2;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+h1 {
+	font-size: clamp(2.25rem, 8vw, 4rem);
+	margin: 0.5rem 0 1rem;
+}
+
+p,
+li {
+	max-width: 65ch;
+}
+
+a {
+	color: inherit;
+}
+
+:focus-visible {
+	outline: 3px solid var(--focus);
+	outline-offset: 3px;
+}
+
+.wrap {
+	max-width: 70rem;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.skip-link {
+	position: absolute;
+	left: 1rem;
+	top: -10rem;
+	padding: 0.75rem 1rem;
+	background: white;
+	color: black;
+}
+
+.skip-link:focus {
+	top: 1rem;
+}
+
+/* ---------- Topplinje og meny ---------- */
+header,
+footer {
+	background: var(--dark);
+	color: var(--bg);
+	padding: 1rem 0;
+	--focus: #ffd166;
+}
+
+header {
+	border-bottom: 0.5rem solid var(--accent);
+}
+
+header .wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-family: var(--header-font);
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+header nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav a {
+	display: inline-block;
+	padding: 0.75rem;
+}
+
+header nav a[aria-current="page"] {
+	font-weight: bold;
+	text-decoration-thickness: 3px;
+}
+
+main {
+	padding: 1rem 0 3rem;
+}
+
+.lead {
+	font-size: 1.25rem;
+}
+
+/* ---------- Brødsmuler ---------- */
+.breadcrumbs ol {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 1rem 0 0;
+	padding: 0;
+	font-size: 0.9rem;
+	color: var(--muted);
+}
+
+.breadcrumbs li + li::before {
+	content: "›";
+	padding: 0 0.5rem;
+}
+
+/* ---------- Kort ---------- */
+.card-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+	gap: 1.5rem;
+	list-style: none;
+	padding: 0;
+}
+
+.card {
+	height: 100%;
+	padding: 1rem 1.25rem;
+	background: white;
+	border: 1px solid var(--text);
+	border-top: 0.5rem solid var(--accent);
+}
+
+.card h2,
+.card h3 {
+	margin-top: 0.25rem;
+}
+
+.meta {
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+
+dl {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 0.25rem 1.5rem;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0;
+}
+
+/* ---------- Diskografi ---------- */
+.album-list {
+	list-style: none;
+	padding: 0;
+}
+
+.album {
+	margin-bottom: 2rem;
+	padding: 1rem 1.25rem;
+	background: white;
+	border-left: 0.5rem solid var(--accent);
+}
+
+.album h2 {
+	margin-bottom: 0.25rem;
+}
+
+/* ---------- Konserter ---------- */
+.concert-list {
+	list-style: none;
+	padding: 0;
+}
+
+.concert {
+	display: grid;
+	grid-template-columns: 6rem 1fr;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+	padding: 1rem 1.25rem;
+	background: white;
+	border: 1px solid var(--text);
+}
+
+.concert h2 {
+	margin: 0 0 0.25rem;
+	font-size: 1.25rem;
+}
+
+.concert .date {
+	font-family: var(--header-font);
+	font-size: 1.25rem;
+	line-height: 1.1;
+	text-transform: uppercase;
+}
+
+.concert address {
+	font-style: normal;
+}
+
+.status {
+	display: inline-block;
+	padding: 0.1rem 0.5rem;
+	font-size: 0.85rem;
+	font-weight: bold;
+	color: white;
+	background: var(--accent);
+}
+
+.button {
+	display: inline-block;
+	margin-top: 0.5rem;
+	padding: 0.5rem 1rem;
+	font-weight: bold;
+	color: white;
+	background: var(--accent);
+	text-decoration: none;
+}
+
+.notice {
+	padding: 0.75rem 1rem;
+	border: 2px dashed var(--accent);
+}
+
+@media (max-width: 30rem) {
+	.concert {
+		grid-template-columns: 1fr;
+	}
+
+	dl {
+		grid-template-columns: 1fr;
+	}
+}
+
+dd .button {
+	display: block;
+	width: fit-content;
+}
